@@ -1,0 +1,14 @@
+{
+  "name": "faketimers",
+  "version": "1.0.0",
+  "description": "Showcase of faketimers bug",
+  "main": "index.spec.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Marinello",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.0.3"
+  }
+}
