@@ -10,8 +10,9 @@ const getTodayMidnight = () => {
 };
 
 describe("getTodayMidnight", () => {
-    it("Returns the right midnight date", () => {
-        jest.useFakeTimers().setSystemTime(new Date("2022-04-19 22:09:01"));
+    it("fails as jest gives a TypeError: Cannot assign to read only property 'performance' of object '[object global]'", () => {
+        jest.useFakeTimers();
+        jest.setSystemTime(new Date("2022-04-19 22:09:01"));
         const actual = getTodayMidnight();
 
         expect(actual).toBe(1649116800000);
